@@ -8,6 +8,10 @@ bevy = { version = "0.18.1", features = ["dynamic_linking"] }
 bevy_dylib = "0.18.1"
 log = { version = "*", features = ["max_level_debug", "release_max_level_warn"] }
 
+[lints.clippy]
+needless_return = "allow"
+pedantic = { level = "warn", priority = -1 }
+
 # enable a small amount of optimization in the dev profile
 [profile.dev]
 opt-level = 1
