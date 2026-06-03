@@ -2,13 +2,20 @@
 name = "bevy_temp"
 version = "0.1.0"
 edition = "2024"
+description = "a template for bevy projects"
+readme = "../README.md"
+repository = "https://github.com/cut-the-freakin-steak/gdrs-temp"
+license = "MIT"
 
 [dependencies]
 avian2d = "*"
 bevy = { version = "*", features = ["dynamic_linking"] }
 bevy_dylib = "*"
 bevy_enhanced_input = "*"
-log = { version = "*", features = ["max_level_debug", "release_max_level_warn"] }
+log = { version = "*", features = [
+	"max_level_debug",
+	"release_max_level_warn",
+] }
 
 [lints.clippy]
 needless_return = "allow"
